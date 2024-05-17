@@ -1,0 +1,31 @@
+.chatMessage {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.chatMessage .messageContent {
+  max-width: 80%;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: #0a8d48;
+}
+
+.chatMessage .messageContent::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-right: 6px solid #0a8d48;
+  margin-top: 10px;
+  margin-left: -6px;
+}
+
+.chatMessage .messageTimestamp {
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 10px;
+}
